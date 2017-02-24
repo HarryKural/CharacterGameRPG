@@ -15,10 +15,21 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
     {
         // Random Number object
         Random random = new Random();
+        
 
         public AbilityForm()
         {
             InitializeComponent();
+        }
+
+        private void _generateAbilities()
+        {
+            STRTextBox.Text = this.Roll3D10().ToString();
+            DEXTextBox.Text = this.Roll3D10().ToString();
+            ENDTextBox.Text = this.Roll3D10().ToString();
+            INTTextBox.Text = this.Roll3D10().ToString();
+            PERTextBox.Text = this.Roll3D10().ToString();
+            CHATextBox.Text = this.Roll3D10().ToString();
         }
 
         /// <summary>
@@ -40,7 +51,23 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         private void RollButton_Click(object sender, EventArgs e)
         {
             Debug.WriteLine(Roll3D10().ToString());
+
+            _generateAbilities();
         }
 
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            // Step 1. Hide the form
+            this.Hide();
+
+            // Step 2. Instantiate an object to the next form
+            RaceForm raceForm = new RaceForm();
+
+            // Step 3. Pass a reference to the current form to the next form
+            raceForm.previousForm = this;
+
+            // Step 4. Show the next form
+            raceForm.Show();
+        }
     }
 }
