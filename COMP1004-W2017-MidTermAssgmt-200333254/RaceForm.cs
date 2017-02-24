@@ -14,7 +14,14 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
     {
         // Create a reference to the previous form
         public AbilityForm previousForm { get; set; }
-        
+
+        private int _STR;
+        private int _DEX;
+        private int _END;
+        private int _INT;
+        private int _PER;
+        private int _CHA;
+
         public RaceForm()
         {
             InitializeComponent();

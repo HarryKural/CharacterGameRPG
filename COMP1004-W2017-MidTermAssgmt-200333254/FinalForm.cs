@@ -35,7 +35,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Printer...");
+            MessageBox.Show("Printing... Your Information is in process.", "Print", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
