@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="M_Dwarf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\M_Dwarf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="M_Human1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\M_Human1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="M_Elf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\M_Elf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="M_Dwarf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\M_Dwarf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="M_Halfling2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\M_Halfling2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="M_Human1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\M_Human1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

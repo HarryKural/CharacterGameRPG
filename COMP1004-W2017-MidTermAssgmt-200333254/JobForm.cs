@@ -12,6 +12,9 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 {
     public partial class JobForm : Form
     {
+        // Create a reference to the previous form
+        public RaceForm previousForm { get; set; }
+
         public JobForm()
         {
             InitializeComponent();
