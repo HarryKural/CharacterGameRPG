@@ -1,4 +1,16 @@
-﻿using System;
+﻿/// <summary>
+/// App name:           Character Generator
+/// Author's name:      Harshit Sharma
+/// Student Number#:    200333254
+/// App Creation Date:  Feb 23, 2017
+/// Last Modified Date: Feb 24, 2017
+/// App description:    This application generates RPG character.
+///                     It displays randomly generated numbers (abilities).
+/// Rapid Application Development - MidTerm Assignment
+/// </summary>
+
+// using pre-existing libraries
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +34,11 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
             InitializeComponent();
         }
 
+        /// <summary>
+        /// This method generate random number in the textboxes
+        /// by using Roll3D10 method.
+        /// converting to ToString
+        /// </summary>
         private void _generateAbilities()
         {
             STRTextBox.Text = this.Roll3D10().ToString();
@@ -48,6 +65,12 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
             return result;
         }
 
+        /// <summary>
+        /// This method calls the _generateAbilities method
+        /// when roll button is clicked.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RollButton_Click(object sender, EventArgs e)
         {
             Debug.WriteLine(Roll3D10().ToString());
@@ -55,6 +78,11 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
             _generateAbilities();
         }
 
+        /// <summary>
+        /// This method shows the race form and hides the ability form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, EventArgs e)
         {
             // Instantiate an object to the next form
