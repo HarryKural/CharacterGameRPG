@@ -31,8 +31,6 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 
             // Show the Font Dialog
             fontDialog.ShowDialog();
-
-
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
@@ -42,7 +40,9 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AboutForm aboutForm = new AboutForm();
 
+            aboutForm.ShowDialog();
         }
     }
 }
