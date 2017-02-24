@@ -57,17 +57,17 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            // Step 1. Hide the form
-            this.Hide();
-
-            // Step 2. Instantiate an object to the next form
+            // Instantiate an object to the next form
             RaceForm raceForm = new RaceForm();
 
-            // Step 3. Pass a reference to the current form to the next form
+            // Pass a reference to the current form to the next form
             raceForm.previousForm = this;
 
-            // Step 4. Show the next form
+            // Show the next form
             raceForm.Show();
+
+            // Hide the form
+            this.Hide();
         }
     }
 }
