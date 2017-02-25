@@ -42,7 +42,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         }
 
         /// <summary>
-        /// 
+        /// This method works when human button selected
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -132,6 +132,13 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
             JobForm jobForm = new JobForm();
 
             jobForm.previousForm = this;
+
+            jobForm.STR = STR.ToString();
+            jobForm.DEX = DEX.ToString();
+            jobForm.END = END.ToString();
+            jobForm.INT = INT.ToString();
+            jobForm.PER = PER.ToString();
+            jobForm.CHA = CHA.ToString();
 
             jobForm.Show();
 

@@ -30,11 +30,23 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         public FinalForm()
         {
             InitializeComponent();
+            STRTextBox.Text = previousForm.STR;
+            DEXTextBox.Text = previousForm.DEX;
+            ENDTextBox.Text = previousForm.END;
+            INTTextBox.Text = previousForm.INT;
+            PERTextBox.Text = previousForm.PER;
+            CHATextBox.Text = previousForm.CHA;
+            JobTextBox.Text = previousForm.job;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Are You Sure?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
