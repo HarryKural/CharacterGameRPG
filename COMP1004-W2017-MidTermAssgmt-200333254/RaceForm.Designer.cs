@@ -64,9 +64,12 @@
             // 
             // RacialBonusTextBox
             // 
+            this.RacialBonusTextBox.BackColor = System.Drawing.Color.White;
             this.RacialBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            this.RacialBonusTextBox.ForeColor = System.Drawing.Color.Black;
             this.RacialBonusTextBox.Location = new System.Drawing.Point(242, 400);
             this.RacialBonusTextBox.Name = "RacialBonusTextBox";
+            this.RacialBonusTextBox.ReadOnly = true;
             this.RacialBonusTextBox.Size = new System.Drawing.Size(287, 20);
             this.RacialBonusTextBox.TabIndex = 7;
             // 

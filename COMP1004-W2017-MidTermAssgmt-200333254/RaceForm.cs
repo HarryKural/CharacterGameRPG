@@ -33,6 +33,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         public int INT;
         public int PER;
         public int CHA;
+        public string race;
 
         public RaceForm()
         {
@@ -52,6 +53,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
                 PER += 5;
                 CHA += 5;
                 RacialBonusTextBox.Text = "Increase all abilities by 5";
+                race = "Human";
             }
             else
             {

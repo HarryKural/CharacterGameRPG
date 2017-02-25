@@ -26,12 +26,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
     {
         // Create a reference to the previous form
         public RaceForm previousForm { get; set; }
-
-        // Initializing variables
-        private int _soldier = 30;
-        private int _rogue = 28;
-        private int _magicker = 15;
-        private int _cultist = 24;
+        
 
         public JobForm()
         {
@@ -40,22 +35,22 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 
         private void SoldierRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            this.HealthPointsTextBox.Text = (30 + previousForm.END).ToString();
         }
 
         private void RogueRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            this.HealthPointsTextBox.Text = (28 + previousForm.DEX).ToString();
         }
 
         private void MagickerRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            this.HealthPointsTextBox.Text = (15 + previousForm.INT).ToString();
         }
 
         private void CultistRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            this.HealthPointsTextBox.Text = (24 + previousForm.CHA).ToString();
         }
 
         private void NextButton_Click(object sender, EventArgs e)

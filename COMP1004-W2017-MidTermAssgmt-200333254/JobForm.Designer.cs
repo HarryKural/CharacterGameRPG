@@ -35,6 +35,7 @@
             this.CultistRadioButton = new System.Windows.Forms.RadioButton();
             this.SoldierRadioButton = new System.Windows.Forms.RadioButton();
             this.HealthPointsLabel = new System.Windows.Forms.Label();
+            this.HealthPointsTextBox = new System.Windows.Forms.TextBox();
             this.JobGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,16 +116,29 @@
             // 
             this.HealthPointsLabel.AutoSize = true;
             this.HealthPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.HealthPointsLabel.Location = new System.Drawing.Point(340, 107);
+            this.HealthPointsLabel.Location = new System.Drawing.Point(396, 116);
             this.HealthPointsLabel.Name = "HealthPointsLabel";
             this.HealthPointsLabel.Size = new System.Drawing.Size(117, 20);
             this.HealthPointsLabel.TabIndex = 5;
             this.HealthPointsLabel.Text = "Health Points";
             // 
+            // HealthPointsTextBox
+            // 
+            this.HealthPointsTextBox.BackColor = System.Drawing.Color.White;
+            this.HealthPointsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.HealthPointsTextBox.ForeColor = System.Drawing.Color.Black;
+            this.HealthPointsTextBox.Location = new System.Drawing.Point(400, 155);
+            this.HealthPointsTextBox.Name = "HealthPointsTextBox";
+            this.HealthPointsTextBox.ReadOnly = true;
+            this.HealthPointsTextBox.Size = new System.Drawing.Size(113, 32);
+            this.HealthPointsTextBox.TabIndex = 6;
+            this.HealthPointsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // JobForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(641, 508);
+            this.Controls.Add(this.HealthPointsTextBox);
             this.Controls.Add(this.HealthPointsLabel);
             this.Controls.Add(this.JobGroupBox);
             this.Controls.Add(this.NextButton);
@@ -148,5 +162,6 @@
         private System.Windows.Forms.RadioButton CultistRadioButton;
         private System.Windows.Forms.RadioButton SoldierRadioButton;
         private System.Windows.Forms.Label HealthPointsLabel;
+        private System.Windows.Forms.TextBox HealthPointsTextBox;
     }
 }
