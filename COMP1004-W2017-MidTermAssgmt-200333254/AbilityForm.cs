@@ -28,25 +28,29 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         // Random Number object
         Random random = new Random();
         
-
+        // Instantiate List for TextBox
+        private List<TextBox> _abilities;
+        
         public AbilityForm()
         {
             InitializeComponent();
+
+            // Instantiates a List of Text Boxes
+            this._abilities = new List<TextBox>();
+            this._initializeAbilities();
         }
 
         /// <summary>
-        /// This method generate random number in the textboxes
-        /// by using Roll3D10 method.
-        /// converting to ToString
+        /// This method adds all the generated numbers to the textboxes
         /// </summary>
-        private void _generateAbilities()
+        private void _initializeAbilities()
         {
-            STRTextBox.Text = this.Roll3D10().ToString();
-            DEXTextBox.Text = this.Roll3D10().ToString();
-            ENDTextBox.Text = this.Roll3D10().ToString();
-            INTTextBox.Text = this.Roll3D10().ToString();
-            PERTextBox.Text = this.Roll3D10().ToString();
-            CHATextBox.Text = this.Roll3D10().ToString();
+            this._abilities.Add(STRTextBox);
+            this._abilities.Add(DEXTextBox);
+            this._abilities.Add(ENDTextBox);
+            this._abilities.Add(INTTextBox);
+            this._abilities.Add(PERTextBox);
+            this._abilities.Add(CHATextBox);
         }
 
         /// <summary>
@@ -66,8 +70,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         }
 
         /// <summary>
-        /// This method calls the _generateAbilities method
-        /// when roll button is clicked.
+        /// This method works when roll button is clicked
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -75,7 +78,12 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         {
             Debug.WriteLine(Roll3D10().ToString());
 
-            _generateAbilities();
+            // iterates through the TextBox List (_abilities)
+            for (int ability = 0; ability < this._abilities.Count; ability++)
+            {
+                // assign the current roll to the current ability
+                this._abilities[ability].Text = this.Roll3D10().ToString();
+            }
         }
 
         /// <summary>
@@ -90,6 +98,14 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 
             // Pass a reference to the current form to the next form
             raceForm.previousForm = this;
+
+            // Setting value of variables to textboxes & parsing to Int
+            raceForm.STR = Int16.Parse(this.STRTextBox.Text);
+            raceForm.DEX = Int16.Parse(this.DEXTextBox.Text);
+            raceForm.END = Int16.Parse(this.ENDTextBox.Text);
+            raceForm.INT = Int16.Parse(this.INTTextBox.Text);
+            raceForm.PER = Int16.Parse(this.PERTextBox.Text);
+            raceForm.CHA = Int16.Parse(this.CHATextBox.Text);
 
             // Show the next form
             raceForm.Show();

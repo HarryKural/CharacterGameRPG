@@ -64,10 +64,10 @@
             // 
             // RacialBonusTextBox
             // 
-            this.RacialBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RacialBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
             this.RacialBonusTextBox.Location = new System.Drawing.Point(242, 400);
             this.RacialBonusTextBox.Name = "RacialBonusTextBox";
-            this.RacialBonusTextBox.Size = new System.Drawing.Size(287, 29);
+            this.RacialBonusTextBox.Size = new System.Drawing.Size(287, 20);
             this.RacialBonusTextBox.TabIndex = 7;
             // 
             // RaceGroupBox

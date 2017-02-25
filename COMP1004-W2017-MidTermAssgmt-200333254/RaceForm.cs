@@ -27,12 +27,12 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         // Create a reference to the previous form
         public AbilityForm previousForm { get; set; }
 
-        private int _STR;
-        private int _DEX;
-        private int _END;
-        private int _INT;
-        private int _PER;
-        private int _CHA;
+        public int STR;
+        public int DEX;
+        public int END;
+        public int INT;
+        public int PER;
+        public int CHA;
 
         public RaceForm()
         {
@@ -42,25 +42,81 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         private void HumanRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.M_Human1;
-            RacialBonusTextBox.Text = "Increase all Character abilities by 5";
+            
+            if (HumanRadioButton.Checked)
+            {
+                STR += 5;
+                DEX += 5;
+                END += 5;
+                INT += 5;
+                PER += 5;
+                CHA += 5;
+                RacialBonusTextBox.Text = "Increase all abilities by 5";
+            }
+            else
+            {
+                STR -= 5;
+                DEX -= 5;
+                END -= 5;
+                INT -= 5;
+                PER -= 5;
+                CHA -= 5;
+            }
         }
 
         private void DwarfRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.M_Dwarf1;
-            RacialBonusTextBox.Text = "Increase STR and PER by 20 & Decrease STR by 10";
+            
+            if (DwarfRadioButton.Checked)
+            {
+                STR += 20;
+                PER += 20;
+                CHA = (CHA - 10 < 3) ? 3 : CHA - 10;
+                RacialBonusTextBox.Text = "Increase STR and PER by 20 & Decrease STR by 10";
+            }
+            else
+            {
+                STR -= 20;
+                PER -= 20;
+                CHA += 10;
+            }
         }
 
         private void ElfRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.M_Elf1;
-            RacialBonusTextBox.Text = "Increase DEX and CHA by 15";
+            
+            if (ElfRadioButton.Checked)
+            {
+                DEX += 15;
+                CHA += 15;
+                RacialBonusTextBox.Text = "Increase DEX & CHA by 15";
+            }
+            else
+            {
+                DEX -= 15;
+                CHA -= 15;
+            }
         }
 
         private void HalflingRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.M_Halfling2;
-            RacialBonusTextBox.Text = "Increase DEX and INT by 20 & Decrease STR by 10";
+            
+            if (HalflingRadioButton.Checked)
+            {
+                DEX += 20;
+                INT += 20;
+                STR = (STR - 10 < 3) ? 3 : STR - 10;
+                RacialBonusTextBox.Text = "Increase DEX and INT by 20 & Decrease STR by 10";
+            }
+            else
+            {
+                DEX -= 20;
+                INT -= 20;
+                STR += 10;
+            }
         }
 
         private void NextButton_Click(object sender, EventArgs e)
