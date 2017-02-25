@@ -27,6 +27,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         // Create a reference to the previous form
         public AbilityForm previousForm { get; set; }
 
+        // Initialize variables
         public int STR;
         public int DEX;
         public int END;
@@ -40,6 +41,11 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HumanRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.M_Human1;

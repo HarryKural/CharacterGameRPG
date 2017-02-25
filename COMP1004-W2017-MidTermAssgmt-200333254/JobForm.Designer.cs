@@ -116,7 +116,7 @@
             // 
             this.HealthPointsLabel.AutoSize = true;
             this.HealthPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.HealthPointsLabel.Location = new System.Drawing.Point(396, 116);
+            this.HealthPointsLabel.Location = new System.Drawing.Point(391, 184);
             this.HealthPointsLabel.Name = "HealthPointsLabel";
             this.HealthPointsLabel.Size = new System.Drawing.Size(117, 20);
             this.HealthPointsLabel.TabIndex = 5;
@@ -127,7 +127,7 @@
             this.HealthPointsTextBox.BackColor = System.Drawing.Color.White;
             this.HealthPointsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.HealthPointsTextBox.ForeColor = System.Drawing.Color.Black;
-            this.HealthPointsTextBox.Location = new System.Drawing.Point(400, 155);
+            this.HealthPointsTextBox.Location = new System.Drawing.Point(395, 223);
             this.HealthPointsTextBox.Name = "HealthPointsTextBox";
             this.HealthPointsTextBox.ReadOnly = true;
             this.HealthPointsTextBox.Size = new System.Drawing.Size(113, 32);

@@ -39,10 +39,12 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FontDialog fontDialog = new FontDialog();
-
-            // Show the Font Dialog
+            // Show the Dialog by using Font Dialog
             fontDialog.ShowDialog();
+
+            CharacterInformationGroupBox.Font = fontDialog.Font;
+            AbilitiesGroupBox.Font = fontDialog.Font;
+            CharacterGroupBox.Font = fontDialog.Font;
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)

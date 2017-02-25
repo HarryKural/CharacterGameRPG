@@ -76,6 +76,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
         /// <param name="e"></param>
         private void RollButton_Click(object sender, EventArgs e)
         {
+            // see in output window
             Debug.WriteLine(Roll3D10().ToString());
 
             // iterates through the TextBox List (_abilities)
@@ -88,6 +89,7 @@ namespace COMP1004_W2017_MidTermAssgmt_200333254
 
         /// <summary>
         /// This method shows the race form and hides the ability form
+        /// Setting the variable values so that it can be used in RaceForm
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
