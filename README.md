@@ -1,2 +1,2 @@
-# Rapid Application Development
- COMP1004 - MidTermAssignment
+# C# Character Game
+> RPG - Role Playing Game
